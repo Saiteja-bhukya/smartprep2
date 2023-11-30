@@ -132,6 +132,12 @@ def add_logo():
 def main():
     st.title("Smartprep")
 
+    hide_github_icon = """
+    #GithubIcon {
+      visibility: hidden;
+    }
+    """
+    st.markdown(hide_github_icon, unsafe_allow_html=True)
 
     st.write("Hello Everyone! Please select the below options to get your desired paper to practice. if you are unable to understand how to use the website, please go to guidelines section to know more. Happy preparation my friend! All the best for your exam.")
     st.markdown(
